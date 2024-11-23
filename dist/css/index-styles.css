@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
 
 * {
   margin: 0;
@@ -33,6 +34,7 @@ body {
 
   /* Google Fonts Variables */
   --kanit: "Kanit", sans-serif;
+  --parkinsans: "Parkinsans", sans-serif;
 }
 
 /* Header Styles */
@@ -69,7 +71,6 @@ nav {
 /* Nav Swiper for when screen is to small */
 /* TODO */
 
-
 .settings-container {
   display: flex;
   align-items: center;
@@ -88,6 +89,7 @@ header a.header-nav-link:hover:not(.settings-container > a.header-nav-link) {
   box-shadow: inset 12px 12px 12px rgba(0, 0, 0, 0.1),
     inset -3px -3px 3px var(--dark-grey);
   padding: clamp(0.1em, 0.25em, 1em);
+  border-radius: 2px;
 }
 
 div.settings-container > a.header-nav-link {
@@ -98,7 +100,6 @@ div.settings-container > a.header-nav-link:hover {
   rotate: 360deg;
 }
 
-
 /* Main (Content) Styles */
 main {
   background-color: rgba(255, 255, 255, 0.05);
@@ -108,6 +109,7 @@ main {
   min-width: 90%;
   display: flex;
   align-items: center;
+  column-gap: 1em;
 }
 
 .wrapper-swiper {
@@ -122,22 +124,21 @@ main {
   border-radius: 10px;
   scroll-snap-type: x mandatory;
   scrollbar-width: thin;
-  scrollbar-darkshadow-color: #ccc;
   border: 2px solid var(--slightly-lighter-black-grey);
   overflow-y: hidden;
   pointer-events: none;
+  flex: 3 0 0;
 }
 
 .card-swiper {
   flex-shrink: 0; /* Makes cards not shrink to introduce overflow to the swiper */
-  width: min(900px);
+  width: 100%;
   height: 100%;
   background-color: white;
   border-radius: 14px;
   text-align: center;
   scroll-snap-align: center;
   border: 2px solid var(--slightly-lighter-black-grey);
-
 }
 
 .card-swiper-img {
@@ -149,7 +150,41 @@ main {
 
 /* Make Swiper vertical for mobile support */
 
+.cta-container {
+  height: 90%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex: 3 0 0;
+  font-family: var(--parkinsans);
+  font-size: 2.5rem;
+}
 
+.ad-line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+span.text {
+  background-color: var(--dark-green);
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -3px -3px 3px var(--dark-green);
+  padding: 0.2em;
+  text-align: center;
+}
 
+button.discover {
+  all: unset;
+  background-color: var(--slightly-lighter-black-grey);
+  padding: .4em;
+  border-radius: 10px;
+  border: 2px solid var(--black-grey);
+  color: var(--green);
+  transition: all 0.4s ease-in-out;
+}
 
+button.discover:hover {
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -3px -3px 3px var(--dark-green);
+  cursor: crosshair;
+}
