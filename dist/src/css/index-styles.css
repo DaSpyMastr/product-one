@@ -134,7 +134,7 @@ main {
   scrollbar-width: thin;
   border: 2px solid var(--slightly-lighter-black-grey);
   overflow-y: hidden;
-  pointer-events: none;
+  pointer-events: fill;
   flex: 3 0 0;
 }
 
