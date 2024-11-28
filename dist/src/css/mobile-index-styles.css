@@ -1,0 +1,23 @@
+/* Mobile and Tablet styles for better access */
+@media screen and (max-width: 1024px) {
+  nav {
+    display: none; /* Removes the Navbar to allow for a sidebar */
+    position: absolute;
+  }
+
+  .title-container, .settings-container {
+    justify-content: center;
+  }
+
+  .settings-container {
+    gap: clamp(5px, 10px, 20px);
+  }
+
+  .settings-container > a.header-nav-link #menu-sidebar {
+    display: inline-block;
+  }
+
+  main {
+    flex-flow: column nowrap;
+  }
+}

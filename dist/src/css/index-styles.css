@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
+@import url(/dist/src/css/mobile-index-styles.css);
 
 * {
   margin: 0;
@@ -8,7 +9,7 @@
 
 body {
   display: grid;
-  grid-template-rows: 1fr 5fr 2fr;
+  grid-template-rows: 1fr 7fr 1fr;
   row-gap: 2%;
   background: linear-gradient(
     var(--very-dark-green),
@@ -42,7 +43,7 @@ header {
   background-color: var(--black-grey);
   border: 1.5px solid var(--slightly-lighter-black-grey);
   border-radius: 10px;
-  padding: clamp(0.5em, 1em, 2.5em);
+  padding: clamp(0.25em, .5em, 1em);
   min-width: 90%;
   box-shadow: -3px 3px 1.8px var(--very-dark-green);
   font-family: var(--kanit), sans-serif;
@@ -88,9 +89,15 @@ nav {
 }
 
 a.header-nav-link {
+  display: flex;
+  align-items: center;
   color: var(--dark-green);
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+}
+
+a.header-nav-link #menu-sidebar {
+  display: none;
 }
 
 header a.header-nav-link:hover:not(.settings-container > a.header-nav-link) {
@@ -102,6 +109,7 @@ header a.header-nav-link:hover:not(.settings-container > a.header-nav-link) {
 
 div.settings-container > a.header-nav-link {
   transform-origin: center 44%;
+  display: flex;
 }
 
 div.settings-container > a.header-nav-link:hover {
@@ -196,3 +204,5 @@ button.discover:hover {
   box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -3px -3px 3px var(--dark-green);
   cursor: pointer;
 }
+
+
