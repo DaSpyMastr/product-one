@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="/dist/src/css/index-styles.css" />
-    <link rel="stylesheet" href="/dist/src/css/mobile-index-styles.css">
+    <link rel="stylesheet" href="/dist/src/css/mobile-index-styles.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -14,18 +14,145 @@
   <body>
     <header>
       <div class="title-container">
-        <a href="index.html"><i class="bx bxl-trip-advisor" id="trip-adivsor-logo"></i></a>
+        <a href="index.html"
+          ><i class="bx bxl-trip-advisor" id="trip-adivsor-logo"></i
+        ></a>
         <span class="title">TripAdvisor</span>
       </div>
       <nav>
         <a class="header-nav-link" href="#">Discover</a>
         <a class="header-nav-link" href="#">Trips</a>
-        <a class="header-nav-link" href="#">View</a>
+        <a class="header-nav-link" href="#">Review</a>
         <a class="header-nav-link" href="#">More</a>
       </nav>
       <div class="settings-container">
-        <a class="header-nav-link" href="#"><i id="cog" class="bx bx-cog"></i></a>
-        <a class="header-nav-link" href="#"><i id="menu-sidebar" class='bx bx-menu'></i></a>
+        <a class="header-nav-link" href="#"
+          ><i id="cog" class="bx bx-cog"></i
+        ></a>
+        <!-- For Mobile Usage -->
+        <a class="header-nav-link" href="#"
+          ><i id="menu-sidebar" class="bx bx-menu"></i
+        ></a>
+        <aside class="sidebar">
+          <ul>
+            <li class="active">
+              <!-- Home Page -->
+              <a href="index.html">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="40px"
+                  viewBox="0 -960 960 960"
+                  width="40px"
+                  fill="#3c6336"
+                >
+                  <path
+                    d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"
+                  />
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <!-- Discover Page -->
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="40px"
+                  viewBox="0 -960 960 960"
+                  width="40px"
+                  fill="#3c6336"
+                >
+                  <path
+                    d="m242-200 206.67-280L242-760h82l206.67 280L324-200h-82Zm247.33 0L696-480 489.33-760h82L778-480 571.33-200h-82Z"
+                  />
+                </svg>
+                <span>Discover</span>
+              </a>
+            </li>
+            <li>
+              <!-- Trips Page -->
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="40px"
+                  viewBox="0 -960 960 960"
+                  width="40px"
+                  fill="#3c6336"
+                >
+                  <path
+                    d="M394.33-117.67 298-298.33l-181.33-97 63-62.67 147 26.33L442-546.33 118.33-684l76-76.67L586.67-692l130-130q21.66-21.67 52.66-21.67 31 0 52.67 21.67t21.67 52.5q0 30.83-21.67 52.5L691.67-586.67l68.66 392L684-118.33 546-442 431.33-326.67l26 146-63 63Z"
+                  />
+                </svg>
+                <span>Trips</span>
+              </a>
+            </li>
+            <li>
+              <!-- Review Page -->
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="40px"
+                  viewBox="0 -960 960 960"
+                  width="40px"
+                  fill="#3c6336"
+                >
+                  <path
+                    d="M120-160v-640l760 320-760 320Zm66.67-102 520.66-218-520.66-220v158.67L428-480l-241.33 60v158Zm0 0v-438 438Z"
+                  />
+                </svg>
+                <span>Review</span>
+              </a>
+            </li>
+            <li>
+              <button class="dropdown-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="40px"
+                  viewBox="0 -960 960 960"
+                  width="40px"
+                  fill="#3c6336"
+                >
+                  <path
+                    d="M448.67-280h66.66v-164H680v-66.67H515.33V-680h-66.66v169.33H280V-444h168.67v164Zm31.51 200q-82.83 0-155.67-31.5-72.84-31.5-127.18-85.83Q143-251.67 111.5-324.56T80-480.33q0-82.88 31.5-155.78Q143-709 197.33-763q54.34-54 127.23-85.5T480.33-880q82.88 0 155.78 31.5Q709-817 763-763t85.5 127Q880-563 880-480.18q0 82.83-31.5 155.67Q817-251.67 763-197.46q-54 54.21-127 85.84Q563-80 480.18-80Zm.15-66.67q139 0 236-97.33t97-236.33q0-139-96.87-236-96.88-97-236.46-97-138.67 0-236 96.87-97.33 96.88-97.33 236.46 0 138.67 97.33 236 97.33 97.33 236.33 97.33ZM480-480Z"
+                  />
+                </svg>
+                <span>Create</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="40px"
+                  viewBox="0 -960 960 960"
+                  width="40px"
+                  fill="#3c6336"
+                >
+                  <path
+                    d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"
+                  />
+                </svg>
+                <ul class="sub-menu">
+                  <li><a href="#">Form</a></li>
+                  <li><a href="#">Rate</a></li>
+                </ul>
+              </button>
+            </li>
+            <li>
+              <!-- More Page -->
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="40px"
+                  viewBox="0 -960 960 960"
+                  width="40px"
+                  fill="#3c6336"
+                >
+                  <path
+                    d="M218.57-421.33q-24.24 0-41.4-17.26Q160-455.86 160-480.09q0-24.24 17.26-41.41 17.26-17.17 41.5-17.17t41.41 17.26q17.16 17.27 17.16 41.5 0 24.24-17.26 41.41-17.26 17.17-41.5 17.17Zm261.34 0q-24.24 0-41.41-17.26-17.17-17.27-17.17-41.5 0-24.24 17.26-41.41 17.27-17.17 41.5-17.17 24.24 0 41.41 17.26 17.17 17.27 17.17 41.5 0 24.24-17.26 41.41-17.27 17.17-41.5 17.17Zm261.33 0q-24.24 0-41.41-17.26-17.16-17.27-17.16-41.5 0-24.24 17.26-41.41 17.26-17.17 41.5-17.17t41.4 17.26Q800-504.14 800-479.91q0 24.24-17.26 41.41-17.26 17.17-41.5 17.17Z"
+                  />
+                </svg>
+                <span>More</span>
+              </a>
+            </li>
+          </ul>
+        </aside>
       </div>
     </header>
     <main>
@@ -71,11 +198,18 @@
           />
         </div>
       </div>
-      <div class="cta-container"> <!-- Call To Action Container -->
+      <div class="cta-container">
+        <!-- Call To Action Container -->
         <div class="ad-line-container">
           <span class="text">Holidays and Vacations for a lifetime of joy</span>
         </div>
-          <button onclick="window.location.href='www.example.php';" type="button" class="discover">Discover Now!</button>
+        <button
+          onclick="window.location.href='www.example.php';"
+          type="button"
+          class="discover"
+        >
+          Discover Now!
+        </button>
       </div>
     </main>
     <footer></footer>

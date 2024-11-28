@@ -97,10 +97,6 @@ a.header-nav-link {
   transition: all 0.3s ease-in-out;
 }
 
-a.header-nav-link>#menu-sidebar {
-  display: none;
-}
-
 #cog {
   font-size: 2.8rem;
 }
@@ -116,7 +112,7 @@ div.settings-container > a.header-nav-link {
   transform-origin: center 51%;
 }
 
-div.settings-container > a.header-nav-link:hover {
+div.settings-container > a.header-nav-link:hover:has(i#cog) {
   rotate: 360deg;
 }
 
