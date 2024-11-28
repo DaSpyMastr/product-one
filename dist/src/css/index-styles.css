@@ -17,7 +17,7 @@ body {
     var(--green)
   );
   min-height: 100svh;
-  margin: clamp(0.8%, 1%, 1.2%);
+  margin: clamp(0.8rem, 1rem, 1.2rem);
 }
 
 :root {
@@ -89,6 +89,7 @@ nav {
 }
 
 a.header-nav-link {
+  all: unset;
   display: flex;
   align-items: center;
   color: var(--dark-green);
@@ -96,8 +97,12 @@ a.header-nav-link {
   transition: all 0.3s ease-in-out;
 }
 
-a.header-nav-link #menu-sidebar {
+a.header-nav-link>#menu-sidebar {
   display: none;
+}
+
+#cog {
+  font-size: 2.8rem;
 }
 
 header a.header-nav-link:hover:not(.settings-container > a.header-nav-link) {
@@ -108,8 +113,7 @@ header a.header-nav-link:hover:not(.settings-container > a.header-nav-link) {
 }
 
 div.settings-container > a.header-nav-link {
-  transform-origin: center 44%;
-  display: flex;
+  transform-origin: center 51%;
 }
 
 div.settings-container > a.header-nav-link:hover {
