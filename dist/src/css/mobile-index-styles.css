@@ -13,8 +13,12 @@
     gap: clamp(5px, 10px, 20px);
   }
 
-  .settings-container > a.header-nav-link #menu-sidebar {
-    display: inline-block;
+  div.settings-container > a.header-nav-link:has(i#menu-sidebar) {
+    display: flex;
+  }
+
+  .sidebar {
+    display: none;
   }
 
   main {

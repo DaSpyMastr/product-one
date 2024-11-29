@@ -60,13 +60,7 @@ header {
   flex: 3 0 0;
 }
 
-a[href="index.html"] {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: var(--dark-green);
-  align-items: center;
-}
+/* Navigation bar Styles */
 
 nav {
   display: flex;
@@ -76,9 +70,6 @@ nav {
   color: var(--dark-green);
   flex: 5 0 0;
 }
-
-/* Nav Swiper for when screen is to small */
-/* TODO */
 
 .settings-container {
   display: flex;
@@ -97,9 +88,7 @@ a.header-nav-link {
   transition: all 0.3s ease-in-out;
 }
 
-#cog {
-  font-size: 2.8rem;
-}
+/* Animation for hover */
 
 header a.header-nav-link:hover:not(.settings-container > a.header-nav-link) {
   box-shadow: inset 12px 12px 12px rgba(0, 0, 0, 0.1),
@@ -114,6 +103,14 @@ div.settings-container > a.header-nav-link {
 
 div.settings-container > a.header-nav-link:hover:has(i#cog) {
   rotate: 360deg;
+}
+
+div.settings-container > a.header-nav-link:has(i#menu-sidebar) {
+  display: none;
+}
+
+.sidebar {
+    display: none;
 }
 
 /* Main (Content) Styles */
