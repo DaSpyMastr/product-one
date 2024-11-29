@@ -110,7 +110,7 @@ div.settings-container > a.header-nav-link:has(i#menu-sidebar) {
 }
 
 .sidebar {
-    display: none;
+  display: none;
 }
 
 /* Main (Content) Styles */
