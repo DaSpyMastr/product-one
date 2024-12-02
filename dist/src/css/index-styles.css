@@ -90,7 +90,7 @@ a.header-nav-link {
 
 /* Animation for hover */
 
-header a.header-nav-link:hover:not(.settings-container > a.header-nav-link) {
+header a.header-nav-link:hover:not(.settings-container > a.header-nav-link):not(#page-refresh) {
   box-shadow: inset 12px 12px 12px rgba(0, 0, 0, 0.1),
     inset -3px -3px 3px var(--dark-grey);
   padding: clamp(0.1em, 0.25em, 1em);
