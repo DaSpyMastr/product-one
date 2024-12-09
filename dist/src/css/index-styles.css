@@ -80,7 +80,6 @@ nav {
 }
 
 a.header-nav-link {
-  all: unset;
   display: flex;
   align-items: center;
   color: var(--dark-green);
